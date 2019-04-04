@@ -4,6 +4,41 @@
     padding: 0%;
 }
 /*header*/
+header{
+  background-color: white;   
+  background-size: cover; 
+  padding: 0;
+  margin: 5%;
+}
+li {
+display: inline;
+text-decoration: none;
+text-decoration-color: black;
+size: 20px;
+padding: 2%;
+}
+
+.navbarSupportedContent {
+  float: right;
+  color: black;
+  box-shadow: 2px 2px 5px #999;
+}
+.nav-link{
+  color: black;
+  box-shadow: 2px 2px 5px #999;
+  float: right;
+  size: 20px;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.compra{
+  float:right; 
+  size: 20px;
+padding: 2%;
+ 
+}
+
 
 
 
