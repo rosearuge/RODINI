@@ -1,25 +1,46 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo de la Marca</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="css/master.css" rel="stylesheet">
+<header class= "cabecera">
+    <ul>
+        <li>
+            <a href="http://twitter.com" target="_blank">
+                <i class="fab fa-2x fa-twitter" style="color:black;"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com" target="_blank">
+                <i class="fab fa-2x fa-instagram" style="color:black;"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://linkedin.com" target="_blank">
+                <i class="fab fa-2x fa-linkedin-in" style="color:black;"></i>
+            </a>
+        </li>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+  <div id="navbarSupportedContent">
+    <ul>
+      <li>
+        <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="login.php" >Login</a>
+      <li>
+        <a class="nav-link" href="login.php" >LOGIN</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="formulario.php">Registrarse</a>
+      <li>
+        <a class="nav-link" href="preguntas.php" >FAQ</a>
       </li>
+      <li class="compra">
+                <i class="fas fa-2x fa-shopping-cart" style= "color: black"></i>
+        </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0" action="" method="">
+    <br>
+    <br>
+    <form class="fas fa-search" action="" method="" id="search">
       <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
     </form>
   </div>
 </nav>
+</header>
