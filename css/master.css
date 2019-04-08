@@ -7,10 +7,19 @@
 
  
 /*header*/
-
-
-
-
+header{
+  background-color: white;   
+  background-size: cover; 
+  padding: 0;
+  margin: 5%;
+}
+li {
+display: inline;
+text-decoration: none;
+text-decoration-color: black;
+size: 20px;
+padding: 2%;
+}
 
 /* css index*/
 .slider1{
@@ -159,7 +168,7 @@
 }
 
 .formulario {
-  width: 350px;
+  max-width:350px;
   position: relative;
   margin-top: 100px;
   margin-left: 400px;
