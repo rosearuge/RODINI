@@ -12,7 +12,12 @@
 
 .imagen{
   width: 100%;
+  height: 350px;
 
+}
+p.descrip{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 5px;
 }
 
 .articulo1,.articulo2{
