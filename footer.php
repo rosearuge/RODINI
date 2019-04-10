@@ -6,27 +6,27 @@
             <ul>
                 <li>
                     <a href="http://twitter.com" target="_blank">
-                      <i class="fab fa-2x fa-twitter" style="color:white;"></i>
+                      <i class="fab fa-2x fa-twitter" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
                 <li>
                     <a href="http://instagram.com" target="_blank">
-                      <i class="fab fa-2x fa-instagram" style="color:white;"></i>
+                      <i class="fab fa-2x fa-instagram" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
                 <li>
                     <a href="http://linkedin.com" target="_blank">
-                      <i class="fab fa-2x fa-linkedin-in" style="color:white;"></i>
+                      <i class="fab fa-2x fa-linkedin-in" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
                 <li>
                     <a href="http://facebook.com" target="_blank">
-                      <i class="fab fa-2x fa-facebook" style="color:white;"></i>
+                      <i class="fab fa-2x fa-facebook" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
                 <li>
                     <a href="http://youtube.com" target="_blank">
-                      <i class="fab fa-2x fa-youtube" style="color:white;"></i>
+                      <i class="fab fa-2x fa-youtube" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
               </ul>
@@ -44,7 +44,7 @@
     </div>
 </section>
 <section class="copyright">
-    <div class="row">
+    <div class="row_copy">
         <div class="col-12 text-center">
             <small>© 2019 <strong>Aulas RoDiNi</strong>. Todos los derechos reservados</small>
         </div>
