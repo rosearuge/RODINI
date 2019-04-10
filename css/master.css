@@ -1,15 +1,15 @@
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0 auto;
+    padding: 0;
 }
 /*css body*/
 
- 
+
 /*header*/
 header{
-  background-color: white;   
-  background-size: cover; 
+  background-color: white;
+  background-size: cover;
   padding: 0;
   margin: 5%;
 }
@@ -62,12 +62,12 @@ padding: 2%;
     text-align: center;
     margin-bottom: 10px;
   }
-  
+
   .login a {
     color: #46485c;
     text-decoration: none;
   }
-  
+
   .login {
     width: 350px;
     position: relative;
@@ -78,7 +78,7 @@ padding: 2%;
     border-radius: 5px;
     box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
   }
-  
+
   input[type="text"], input[type="password"],input[type="email"] {
     width: 250px;
     padding: 25px 0px;
@@ -92,7 +92,7 @@ padding: 2%;
   input[type=checkbox] {
     display: none;
   }
-  
+
   label {
     display: block;
     position: absolute;
@@ -121,18 +121,18 @@ padding: 2%;
     font-weight: bold;
     color: #6d7781;
   }
-  
+
   .remember {
     padding: 30px 0px;
     font-size: 12px;
     text-indent: 25px;
     line-height: 15px;
   }
-  
+
   #remember:checked ~ label[for=remember] {
     background: #ee3203;
   }
-  
+
   input[type="submit"] {
     background: #0786ee;
     border: 0;
@@ -146,11 +146,11 @@ padding: 2%;
   input[type="submit"]:hover {
     background: #16aa56;
   }
-  
+
   ::-webkit-input-placeholder {
     color: #46485c;
   }
-  
+
   [placeholder]:focus::-webkit-input-placeholder {
     transition: all 0.2s linear;
     transform: translate(10px, 0);
@@ -191,8 +191,7 @@ padding: 2%;
 footer{
   position: relative;
   bottom: 0;
-  width: 100%;
- 
+
 }
 .__wrapper-contact {
   background-color: #000;
