@@ -59,7 +59,7 @@
     </div>
   </div>
   </section>
-  <section class="row2 _cursos">
+  <section class="row _cursos">
                 <article class="articulo1 col-xs-12 col-md-6 col-lg-6">
                     <h2>Full Stack</h2>
                         <img class="imagen" src="img/contactanos.jpg">
