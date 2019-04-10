@@ -3,13 +3,24 @@
     margin: 0 auto;
     padding: 0;
 }
-/*css*/
-.caja3{
-  background-image: url("../img/contactanos.jpg");
-  background-size: cover;
-  background-position: center;
+/*css index */
+._cursos{
+  margin-top: 35px;
+  background-color: white;
+  display: flex;
+}
+
+.imagen{
+  width: 100%;
 
 }
+
+.articulo1,.articulo2{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 
 /*header*/
@@ -201,7 +212,9 @@ footer{
 h4{
   color: #46485c;
 }
-
+a{
+  color: white;
+}
 .row{
   background-color: black;
   color: white;

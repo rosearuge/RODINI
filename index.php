@@ -59,6 +59,18 @@
     </div>
   </div>
   </section>
+  <section class="row2 _cursos">
+                <article class="articulo1 col-xs-12 col-md-6 col-lg-6">
+                    <h2>Full Stack</h2>
+                        <img class="imagen" src="img/contactanos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed suscipit dolorem. Ullam, deleniti veritatis. Veniam eius a facilis quod numquam, unde aperiam similique aliquam reprehenderit incidunt impedit quas molestias.</p>
+                </article>
+                <article class="articulo2 col-xs-12 col-md-6 col-lg-6">
+                    <h2>Mobile IOS</h2>
+                        <img class="imagen" src="img/noticias.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aut iste recusandae commodi architecto nobis ad, officiis reiciendis saepe minima, optio in neque quod. Veniam earum repellendus cupiditate libero illum?</p>
+                </article>
+            </section>
   <section class="caja2">
     
   </section>
