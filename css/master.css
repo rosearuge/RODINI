@@ -25,6 +25,19 @@ p.descrip{
   justify-content: space-between;
 }
 
+@media (max-width: 900px) {
+  .row_cursos {
+    padding: 20px;
+    width: 95vw;
+  }
+}
+  @media (max-width: 450px){
+    .row_cursos {
+      width: 100%;
+      clear: both;
+      font-size: 13px;
+    }
+  }
 
 
 
