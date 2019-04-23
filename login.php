@@ -1,3 +1,29 @@
+<?php
+include_once("controladores/funciones.php");
+if($_POST){
+  
+  $errores= validar($_POST,"login");
+  if(count($errores)==0){
+    $usuario = buscarEmail($_POST["email"]);
+    if($usuario == null){
+      $errores["email"]="Usuario no existe";
+    }else{
+      if(password_verify($_POST["password"],$usuario["password"])===false){
+        $errores["password"]="Error en los datos verifique";
+      }else{
+        seteoUsuario($usuario,$_POST);
+        if(validarUsuario()){
+          header("location: perfil.php");
+          exit;
+        }else{
+          header("location: registro.php");
+          exit;
+        }
+      }
+    } 
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,9 +45,9 @@
        ?>
    </header>
   <div class='login'>
-    <form action="" method="">
+    <form action="" method="POST">
       <h2>Inicio de Sesion</h2> 
-      <input name='username' placeholder='Usuario' type='text' value=""/><hr>
+      <input name='email' placeholder='email' type='text' value=""/><hr>
       <input id='pw' name='password' placeholder='Contraseña' type='password' value=""/><hr>
       <div class='remember'>
           <input  id='remember' name='remember' type='checkbox'/>

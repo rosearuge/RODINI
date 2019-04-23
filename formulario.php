@@ -1,3 +1,16 @@
+<?php
+include_once("controladores/funciones.php");
+if ($_POST){
+  $errores=validar($_POST,"registro");
+  if(count($errores)==0){
+    $avatar = armarAvatar($_FILES);
+    $registro = armarRegistro($_POST,$avatar);
+    guardar($registro);
+    header("location:login.php");
+    exit;
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,7 +36,7 @@
       </header>
     <div class='formulario'>
       <h2>Registrarse</h2>
-      <form action="" method="">
+      <form action="" method="POST">
         <input name='username' placeholder='Usuario' type='text'/><hr>
         <input name="email" type="text"  placeholder="Email" title="user@email.com"><hr>
         <input id='pw' name='password' placeholder='Contraseña' type='password'/><hr>
