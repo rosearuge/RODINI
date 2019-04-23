@@ -4,9 +4,9 @@ if($_POST){
   
   $errores= validar($_POST,"login");
   if(count($errores)==0){
-    $usuario = buscarEmail($_POST["email"]);
+    $usuario = buscarUse($_POST["usename"]);
     if($usuario == null){
-      $errores["email"]="Usuario no existe";
+      $errores["username"]="Usuario no existe";
     }else{
       if(password_verify($_POST["password"],$usuario["password"])===false){
         $errores["password"]="Error en los datos verifique";
@@ -16,7 +16,7 @@ if($_POST){
           header("location: perfil.php");
           exit;
         }else{
-          header("location: registro.php");
+          header("location: formulario.php");
           exit;
         }
       }
@@ -45,9 +45,18 @@ if($_POST){
        ?>
    </header>
   <div class='login'>
-    <form action="" method="POST">
+  <?php
+      if(isset($errores)):?>
+        <ul class="alert alert-danger">
+          <?php
+          foreach ($errores as $key => $value) :?>
+            <li> <?=$value;?> </li>
+            <?php endforeach;?>
+        </ul>
+      <?php endif;?>
+    <form action="" method="">
       <h2>Inicio de Sesion</h2> 
-      <input name='email' placeholder='email' type='text' value=""/><hr>
+      <input name='username' placeholder='Usuario' type='text' value=""/><hr>
       <input id='pw' name='password' placeholder='Contraseña' type='password' value=""/><hr>
       <div class='remember'>
           <input  id='remember' name='remember' type='checkbox'/>
