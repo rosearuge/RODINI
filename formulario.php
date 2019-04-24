@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php
+include_once("controladores/funciones.php");
+if ($_POST){
+  $errores=validar($_POST,"registro");
+  if(count($errores)==0){
+    $avatar = armarAvatar($_FILES);
+    $registro = armarRegistro($_POST,$avatar);
+    guardar($registro);
+    header("location:login.php");
+    exit;
+  }
+}
+?>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +35,23 @@
        ?>
       </header>
     <div class='formulario'>
+      <?php
+      if(isset($errores)):?>
+        <ul class="alert alert-danger">
+          <?php
+          foreach ($errores as $key => $value) :?>
+            <li> <?=$value;?> </li>
+            <?php endforeach;?>
+        </ul>
+      <?php endif;?>
       <h2>Registrarse</h2>
-      <form action="" method="">
-        <input name='username' placeholder='Usuario' type='text'/><hr>
-        <input name="email" type="text"  placeholder="Email" title="user@email.com"><hr>
-        <input id='pw' name='password' placeholder='Contraseña' type='password'/><hr>
-        <input name="cpassword" type="password" placeholder="Confirmar Contraseña"><hr>
+      <form action="" method="POST" enctype= "multipart/form-data">
+        <input name='nombre' id="nombre" placeholder='Usuario' type='text' value="<?=(isset($errores["nombre"]) )? "" : inputUsuario("nombre");?>"/><hr>
+        <input name="email" id="email" type="text"  placeholder="Email" title="user@email.com" value="<?=isset($errores["email"])? "":inputUsuario("email") ;?>"><hr>
+        <input name='password'  id="password" placeholder='Contraseña' type='password' value=""/><hr>
+        <input name="repassword" id="repassword" type="password" placeholder="Confirmar Contraseña" value=""><hr>
+        <input  type="file" name="avatar" value=""/>
+        <br>
         <input type='submit' value='Registrarte'/>
       </form>  
     </div>
