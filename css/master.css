@@ -42,18 +42,94 @@ p.descrip{
 
 
 /*header*/
-header{
-  background-color: white;
-  background-size: cover;
-  padding: 0;
-  margin: 5%;
+/* Clase agregada */
+
+.__show {
+  display:block!important;
 }
-li {
-display: inline;
-text-decoration: none;
-text-decoration-color: black;
-size: 20px;
-padding: 2%;
+
+.header{
+  z-index: 8;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  background-color: #cfcfcf;
+  }
+  .navbar {
+    background-color: #cfcfcfbf;
+    z-index: 8;
+  }
+  .header a{
+    color: black;
+    text-decoration: none;
+    padding: 2rem 0;
+  }
+  .logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+
+  .logo{
+      letter-spacing: 15px;
+      font-size: 1.3em;
+  }
+
+  .menu-icon{
+      display:none;
+  }
+  
+  .navigation ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  }
+  .navigation ul li{
+    display: inline-block;
+  }
+  .navigation ul li a{
+    display: block;
+    padding:0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  
+  }
+  .navigation ul li a:hover{
+      background: #2081ff;
+  }
+@media (max-width: 767px){
+
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+  }
+
+      .navigation{
+  width:100%;
+  margin-top: 1rem;
+}
+.navigation ul{
+  display:none;
+
+}
+.navigation ul.show{
+  display: block;
+}
+  .navigation ul li{
+display: block;
+}
+
+  .navigation ul li a{
+display: block;
+padding:0.5rem 0rem;
+transition: all 0.4s linear;
+border-radius: 5px;
+}
 }
 
 /* css index*/
