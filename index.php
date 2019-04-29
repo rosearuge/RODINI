@@ -13,12 +13,13 @@
 </head>
 
 <body>
-<div class ="container-fluid">
+
   <header>
     <?php
       include 'header.php';
     ?>
   </header>
+  <div class ="container-fluid">
   <section class= "caja1">
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
