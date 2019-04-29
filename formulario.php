@@ -3,15 +3,20 @@ include_once("controladores/funciones.php");
 if ($_POST){
   $errores=validar($_POST,"registro");
   if(count($errores)==0){
+    $usuario = buscarEmail($_POST["email"]);
+    if($usuario !== null){
+      $errores["email"]="Este Usuario ya existe";
+    }else{
     $avatar = armarAvatar($_FILES);
     $registro = armarRegistro($_POST,$avatar);
     guardar($registro);
     header("location:login.php");
     exit;
   }
-}
+  }
+}  
 ?>
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">

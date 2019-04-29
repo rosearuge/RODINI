@@ -12,13 +12,13 @@ function validar($datos,$bandera){
     if(isset($datos["nombre"])){
         $nombre = trim($datos["nombre"]);
         if(empty($nombre)){
-            $errores["nombre"]= "El campo nombre no debe estar vacio";
+            $errores["nombre"]= "Debes completar el nombre de Usuario";
         }
     }
 
     $email = trim($datos["email"]);
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $errores["email"]="Email invalido !!!!!";
+        $errores["email"]="El Email no es valido!";
     }
     $password= trim($datos["password"]);
     if(isset($datos["repassword"])){
@@ -44,7 +44,7 @@ function validar($datos,$bandera){
         $nombre = $_FILES["avatar"]["name"];
         $ext = pathinfo($nombre,PATHINFO_EXTENSION);
         if($ext != "png" && $ext != "jpg" && $ext !="JPEG"){
-            $errores["avatar"]="Debe seleccionar archivo png ó jpg";
+            $errores["avatar"]="Debe seleccionar archivo png/jpg/jpeg";
         }
     
     }
@@ -91,15 +91,15 @@ function guardar($usuario){
 function buscarEmail($email){
 
     $usuarios = abrirBaseDatos();
-    
-    foreach ($usuarios as  $usuario) {
-        if($email === $usuario["email"]){
-            return $usuario;
+    if($usuarios !==null){
+        foreach ($usuarios as  $usuario) {
+            if($email === $usuario["email"]){
+              return $usuario;
+            }
         }
     }
     return null;
 }
-
 
 function abrirBaseDatos(){
     $baseDatosJson= file_get_contents("usuarios.json");
