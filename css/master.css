@@ -199,11 +199,8 @@ border-radius: 5px;
     color: #46485c;
     font-size: 12px;
   }
-  input[type=checkbox] {
-    display: none;
-  }
 
-  label {
+  /*label {
     display: block;
     position: absolute;
     margin-right: 10px;
@@ -215,7 +212,7 @@ border-radius: 5px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     border: 3px solid #46485c;
-  }
+  }*/
   .forgot {
     margin-top: 30px;
     display: block;
@@ -239,9 +236,6 @@ border-radius: 5px;
     line-height: 15px;
   }
 
-  #recordar:checked ~ label[for=remember] {
-    background: #ee3203;
-  }
 
   input[type="submit"] {
     background: #0786ee;

@@ -25,7 +25,7 @@ if(!isset($_SESSION["email"])) {
       <p>
       <img src="imagenes/<?=$_SESSION["avatar"];?>" alt="Avatar" >
       </p>
-      <a href="logout.php">Cerrar Sesión</a>
+      <a class="logout" href="logout.php">Cerrar Sesión</a>
       </article> 
     </section>
 
