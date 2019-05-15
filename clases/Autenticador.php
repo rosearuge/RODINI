@@ -15,8 +15,8 @@ class Autenticador{
         $_SESSION["avatar"]= $user["avatar"];
     }
     static public function seteoCookie($user){
-            setcookie("email",$dato["email"],time()+3600);
-            setcookie("password",$dato["password"],time()+3600);
+            setcookie("email",$user["email"],time()+3600);
+            setcookie("password",$user["password"],time()+3600);
     }
     static public function validarUsuario(){
         if(isset($_SESSION["email"])){

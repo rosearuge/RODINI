@@ -1,18 +1,21 @@
 <?php
-include_once("controladores/funciones.php");
+include_once("autoload.php");
 if($_POST){
-
-  $errores= validar($_POST,"login");
+  $usuario = new Usuario($_POST["email"],$_POST["password"]);
+  $errores= $validar->validacionLogin($usuario);
   if(count($errores)==0){
-    $usuario = buscarEmail($_POST["email"]);
-    if($usuario == null){
+    $usuarioEncontrado = $json->buscarEmail($usuario->getEmail());
+    if($usuarioEncontrado == null){
       $errores["email"]="Usuario no existe";
     }else{
-      if(password_verify($_POST["password"],$usuario["password"])===false){
+      if(Autenticador::verificarPassword($usuario->getPassword(),$usuarioEncontrado["password"] )!=true){
         $errores["password"]="Error en los datos verifique";
       }else{
-        seteoUsuario($usuario,$_POST);
-        if(validarUsuario()){
+        Autenticador::seteoSesion($usuarioEncontrado);
+        if(isset($_POST["recordar"])){
+          Autenticador::seteoCookie($usuarioEncontrado);
+        }
+        if(Autenticador::validarUsuario()){
           header("location: perfil.php");
           exit;
         }else{
@@ -63,7 +66,7 @@ if($_POST){
           <label for='remember'></label>Recuerdame
       </div>
       <input type='submit' value='Iniciar Sesion'/>
-      <a class='forgot' href='#'>¿Olvidaste tu contraseña?</a>
+      <a class='forgot' href='olvidePassword.php'>¿Olvidaste tu contraseña?</a>
     </form>
   </div>
   <section class="caja2">
