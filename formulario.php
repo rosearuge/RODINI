@@ -1,21 +1,25 @@
 <?php
-include_once("controladores/funciones.php");
+require_once("autoload.php");
 if ($_POST){
-  $errores=validar($_POST,"registro");
+  $usuario = new Usuario($_POST["email"],$_POST["password"],$_POST["repassword"],$_POST["nombre"],$_FILES );
+  
+  $errores = $validar->validacionUsuario($usuario, $_POST["repassword"]);
   if(count($errores)==0){
-    $usuario = buscarEmail($_POST["email"]);
-    if($usuario !== null){
-      $errores["email"]="Este Usuario ya existe";
+    $usuarioEncontrado = $json->buscarEmail($usuario->getEmail());
+    if($usuarioEncontrado != null){
+      $errores["email"]="Usuario ya registrado";
     }else{
-    $avatar = armarAvatar($_FILES);
-    $registro = armarRegistro($_POST,$avatar);
-    guardar($registro);
-    header("location:login.php");
-    exit;
+      $avatar = $registro->armarAvatar($usuario->getAvatar());
+      $registroUsuario = $registro->armarUsuario($usuario,$avatar);
+      $json->guardar($registroUsuario);
+      redirect ("login.php");
+    }
   }
-  }
-}  
+}
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
