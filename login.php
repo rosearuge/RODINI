@@ -71,7 +71,7 @@ if($_POST){
   </div>
   <section class="caja2">
 
-    </section>
+  </section>
 </div>
 <footer>
     <?php

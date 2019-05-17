@@ -1,7 +1,6 @@
 <?php
 class Validador{
     public function validacionUsuario($usuario){
-        
         $errores=array();
         $nombre = trim($usuario->getNombre());
         if(isset($nombre)) {
@@ -20,7 +19,7 @@ class Validador{
         
 
         if(empty($password)){
-            $errores["password"]= "Hermano querido el campo password no lo podés dejar en blanco";
+            $errores["password"]= "Debes completar el password";
         }elseif (strlen($password)<6) {
             $errores["password"]="La contraseña debe tener como mínimo 6 caracteres";
         }
@@ -35,7 +34,7 @@ class Validador{
             }else{
                 $nombre = $_FILES["avatar"]["name"];
                 $ext = pathinfo($nombre,PATHINFO_EXTENSION);
-                if($ext != "png" && $ext != "jpg"){
+                if($ext != "png" && $ext != "jpg" && $ext != "jpeg"){
                     $errores["avatar"]="Debe seleccionar archivo png ó jpg";
                 }
             }
@@ -54,7 +53,7 @@ class Validador{
         $password= trim($usuario->getPassword());
        
         if(empty($password)){
-            $errores["password"]= "Hermano querido el campo password no lo podés dejar en blanco";
+            $errores["password"]= "Debes completar el password";
         }elseif (strlen($password)<6) {
             $errores["password"]="La contraseña debe tener como mínimo 6 caracteres";
         }
@@ -76,12 +75,12 @@ class Validador{
         
 
         if(empty($password)){
-            $errores["password"]= "Hermano querido el campo password no lo podés dejar en blanco";
+            $errores["password"]= "Debes completar el password";
         }elseif (strlen($password)<6) {
             $errores["password"]="La contraseña debe tener como mínimo 6 caracteres";
         }
         if(empty($repassword)){
-            $errores["repassword"]= "Hermano querido el campo confirmar nuevo password no lo podés dejar en blanco";
+            $errores["repassword"]= "Debes completar el campo confirmar nuevo password";
         }
     
         return $errores;

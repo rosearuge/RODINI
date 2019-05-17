@@ -33,7 +33,7 @@ class Usuario{
     public function getRepassword(){
         return $this->repassword;
     }
-    public function setRepassword($password){
+    public function setRepassword($repassword){
         $this->repassword = $repassword;
     }
 
