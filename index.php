@@ -20,7 +20,7 @@
     ?>
   </header>
   <div class ="container-fluid">
-  <section class= "caja1">
+  <section class= "caja1" style="margin-top: 120px;">
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="carousel-item slider3">
-          
+
           <div class="carousel-caption d-none d-md-block">
             <h5>Clases</h5>
             <p>Presenciales</p>
@@ -74,10 +74,10 @@
                 </article>
             </section>
   <section class="caja2">
-    
+
   </section>
- 
-</div> 
+
+</div>
   <footer>
     <?php
       include 'footer.php';
