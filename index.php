@@ -31,21 +31,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active slider1">
           <div class="carousel-caption d-none d-md-block">
-            <h5>PROGRAMAR</h5>
+            <h5>programar</h5>
             <p>Full Stack</p>
           </div>
         </div>
         <div class="carousel-item slider2">
           <div class="carousel-caption d-none d-md-block">
-            <h5>TECNOLOGIA</h5>
+            <h5>tecnología</h5>
             <p>El futuro es hoy</p>
           </div>
         </div>
         <div class="carousel-item slider3">
 
           <div class="carousel-caption d-none d-md-block">
-            <h5>Clases</h5>
-            <p>Presenciales</p>
+            <h5>clases</h5>
+            <p>A distancia</p>
           </div>
         </div>
       </div>

@@ -20,11 +20,14 @@ p.descrip{
   margin-top: 5px;
 }
 
+h5{
+  text-transform: uppercase;
+}
+
 .articulo1,.articulo2{
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 @media (max-width: 900px) {
   .row_cursos {
@@ -288,8 +291,8 @@ border-radius: 5px;
   max-width: 900px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 90px;
-/*  background-image: url(../img/rodini-logo.jpg);
-  background-repeat: repeat; ACÁ VOY A TRANSPARENTAR LA IMAGEN CON PHOTOSHOP*/
+  background-image: url(../img/LogoTransp.jpg);
+  background-repeat: repeat;
 }
 .preguntas li{
   list-style-type: none;
