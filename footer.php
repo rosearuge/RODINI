@@ -29,7 +29,7 @@
                       <i class="fab fa-2x fa-youtube" style="color:#CFCFB1;"></i>
                     </a>
                 </li>
-              </ul>
+              </ul>  
             </p>
         </article>
       <article class="col-12 text-center col-sm-6 text-sm-center col-md-6 text-md-center col-lg-4 text-lg-center">
