@@ -19,7 +19,7 @@
     <h1>Preguntas Frecuentes</h1>
     <p>Por medio de la sección de Preguntas Frecuentes, responderemos las dudas más comunes:</p>
     <ol>
-      <h2><li>¿Qué es Aula Rodini?</li></h2> <!-- A Rodini habría que aplicarle tex transform -->
+      <h2><li>¿Qué es Aula RoDiNi?</li></h2>
       <p>Aula Rodini, es un centro educativo especializado en la formación e-learning (online). Ubicado en Buenos Aires, forma alumnos de todo el país a través de sus campus virtuales.</p>
       <h2><li>¿Me dan un título al finalizar mi curso?</li></h2>
       <p>Una vez finalizado y aprobado el curso recibirás un certificado/diploma acreditativo de la formación recibida. El mismo se podrá descargar desde nuestro sitio web, y cuenta con un ID único que le permitirá a cualquier empresa o persona comprobar su veracidad.</p>
@@ -42,9 +42,9 @@
     </ol>
   </div>
   <section class="caja2">
-    
+
     </section>
-</div> 
+</div>
   <footer>
     <?php
       include 'footer.php';

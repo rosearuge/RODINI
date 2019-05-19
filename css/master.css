@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 0;
 }
-/*css index */
+/*css index parte1*/
 ._cursos{
   margin-top: 35px;
   background-color: white;
@@ -18,6 +18,10 @@
 p.descrip{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 5px;
+}
+
+h5{
+  text-transform: uppercase;
 }
 
 .articulo1,.articulo2{
@@ -82,7 +86,7 @@ p.descrip{
   .menu-icon{
       display:none;
   }
-  
+
   .navigation ul{
   margin:0;
   padding:0;
@@ -96,7 +100,7 @@ p.descrip{
     padding:0.5rem 1rem;
     transition: all 0.4s linear;
     border-radius: 5px;
-  
+
   }
   .navigation ul li a:hover{
       background: #2081ff;
@@ -132,7 +136,7 @@ border-radius: 5px;
 }
 }
 
-/* css index*/
+/* css index parte2*/
 .slider1{
   background-image: url("../img/codigo.jpg");
   height: 40vh;
@@ -286,6 +290,9 @@ border-radius: 5px;
 .preguntas{
   max-width: 900px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 90px;
+  background-image: url(../img/LogoTransp.jpg);
+  background-repeat: repeat;
 }
 .preguntas li{
   list-style-type: none;
