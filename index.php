@@ -59,12 +59,12 @@
             <article class="articulo1 col-xs-12 col-md-6 col-lg-6">
               <h2>Full Stack</h2>
                 <img class="imagen" src="img/contactanos.jpg">
-                    <p class="descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed suscipit dolorem. Ullam, deleniti veritatis. Veniam eius a facilis quod numquam, unde aperiam similique aliquam reprehenderit incidunt impedit quas molestias.</p>
+                    <p class="descrip">Este programa está diseñado para entrenar en 720 horas repartidas en 4 u 8 meses, a personas sin ninguna experiencia previa en programación y convertirlos en un Full Stack Developer empleable en cualquier proyecto de desarrollo. Si no sabés nada de programación y estás motivado para encarar un desafío intensivo e iniciarte en una nueva profesión, éste es tu programa.</p>
                 </article>
                 <article class="articulo2 col-xs-12 col-md-6 col-lg-6">
                     <h2>Mobile IOS</h2>
                         <img class="imagen" src="img/noticias.jpg">
-                    <p class="descrip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aut iste recusandae commodi architecto nobis ad, officiis reiciendis saepe minima, optio in neque quod. Veniam earum repellendus cupiditate libero illum?</p>
+                    <p class="descrip">Convertite en un programador Mobile iOS certificado, estudiá con los expertos y adquirí las herramientas y bases para transformar tu carrera. Aprendé a crear aplicaciones mobile sólidas, funcionales y atractivas para iOS.</p>
                 </article>
             <article class="articulo1 col-xs-12 col-md-6 col-lg-6">
               <h2>Diseño gráfico</h2>
